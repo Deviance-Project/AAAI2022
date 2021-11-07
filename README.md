@@ -1,10 +1,10 @@
 # Paper
 DevianceNet: Learning to Predict Deviance from A Large-scale Geo-tagged Dataset. [Comming Soon..]
 
-
+# Datatset
 ## The Deviance dataset contains
- - Sequential images for dataset
- - Geo-tagged image fiels annotated with deviance class
+ - Sequential images
+ - Geo-tagged image files annotated with deviance class
  - Dataset description
 
 
@@ -41,8 +41,7 @@ Deviance
      └── ...   
 ```
 
-*** Data split Information ***
-The directory {City}_{train/test}_{SEA/DIA} is used for train/test corresponding to the {City}.
-The files v_class{number}_g{GPS}_c{} is annotated with corresponding deviance class[1 to 5], location information(GPS) and viewpoint direction [0 to 11].
-Note that The files v_class{number}_g{GPS}_c{}[+,++,+++] indicates the additional sets of sequential images in the GPS. 
+#### The directory {City}_{train/test}_{SEA/DIA} is used for train/test corresponding to the {City}.
+#### The files v_class{number}_g{GPS}_c{} is annotated with corresponding deviance class[1 to 5], location information(GPS) and viewpoint direction [0 to 11].
+#### Note that The files v_class{number}_g{GPS}_c{}[+,++,+++] indicates the additional sets of sequential images in the GPS. 
 
