@@ -2,7 +2,7 @@
 DevianceNet: Learning to Predict Deviance from A Large-scale Geo-tagged Dataset. [Comming Soon..]
 
 # Datatset
-## The Deviance dataset contains
+### Datatset Composition
  - Sequential images
  - Geo-tagged image files annotated with deviance class
  - Dataset description
