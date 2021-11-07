@@ -9,7 +9,7 @@ DevianceNet: Learning to Predict Deviance from A Large-scale Geo-tagged Dataset.
 
 
 ### Dataset URL 
-Please download the dataset at (https://drive.google.com/drive/folders/1ERFaC_6IseQgXDvs5_ep5at56b-b7Vmg?usp=sharing)
+Please download the dataset at (https://drive.google.com/drive/folders/1ERFaC_6IseQgXDvs5_ep5at56b-b7Vmg?usp=sharing).
 
 
 ### Dataset Description
@@ -46,4 +46,8 @@ The directory {City}\_{Train/Test}\_{SEA/DIA} is used for train/test correspondi
 The files v\_class{Number}\_g{GPS}\_c{Direction} is annotated with corresponding deviance class, GPS and viewpoint direction.
 
 Note that '+'(ex. v_class2_g35.0911,129.0394_c1+) indicates the additional sets of sequential images in the GPS. 
+
+
+# Code
+Code will be released with paper. [Comming Soon..]
 
