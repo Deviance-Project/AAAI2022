@@ -41,7 +41,9 @@ Deviance
      └── ...   
 ```
 
-#### The directory {City}_{train/test}_{SEA/DIA} is used for train/test corresponding to the {City}.
-#### The files v_class{number}_g{GPS}_c{} is annotated with corresponding deviance class[1 to 5], location information(GPS) and viewpoint direction [0 to 11].
-#### Note that The files v_class{number}_g{GPS}_c{}[+,++,+++] indicates the additional sets of sequential images in the GPS. 
+The directory {City}\_{Train/Test}\_{SEA/DIA} is used for train/test corresponding to the {City}.
+
+The files v\_class{Number}\_g{GPS}\_c{Direction} is annotated with corresponding deviance class, GPS and viewpoint direction.
+
+Note that '+'(ex. v_class2_g35.0911,129.0394_c1+) indicates the additional sets of sequential images in the GPS. 
 
