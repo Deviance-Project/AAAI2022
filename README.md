@@ -1,5 +1,5 @@
 # Paper
-DevianceNet: Learning to Predict Deviance from A Large-scale Geo-tagged Dataset. [Comming Soon..]
+DevianceNet: Learning to Predict Deviance from A Large-scale Geo-tagged Dataset (AAAI-22, Feb 2022)
 
 ### Project Page
 Please access our project page for further information. [https://deviance-project.github.io/DevianceNet/]
@@ -52,5 +52,50 @@ Note that '+'(ex. v_class2_g35.0911,129.0394_c1+) indicates the additional sets 
 
 
 # Code
-Code will be released with paper. [Comming Soon..]
+## The source code contains
+ - Our implementation of DevianeNet (./src/models/devianceNet.py)
+ - Official implementation of DevianceNet (./src/main.py)
+ - Train & evaluation code for Deviance Dataset
+ - Code description
+
+## Requirements
+ - Ubuntu 16.04
+ - python 3.8
+ - numpy>=1.18.5
+ - torch==1.7.0
+ - torchvision>=0.5.0
+ - pillow>= 8.0.1
+ - scikit-image
+ - tqdm
+ - sklearn
+ - pandas
+ - h5py
+ - matplotlib
+ - apex
+ - scipy>=1.4.1
+
+### Preparation
+1. download the dataset and pretrained weights at (https://drive.google.com/drive/folders/1ERFaC_6IseQgXDvs5_ep5at56b-b7Vmg?usp=sharing).
+2. Put the dataset into **./src/data/** folder
+3. [For Application & Evaluation] Put the pretrained weights into **./src/weight_file/** folder.
+
+### Training & Testing
+Use the **'main.py'** to train/test our model.
+```shell
+# Train
+python main.py --train_folder_directory {Dataset Directory} --SEA_folder_directory {Dataset Directory} --DIA_folder_directory {Dataset Directory} --experiment_description Train --batch_size 36 --num_threads 16 --classifier_type SEA_DIA
+# Test SEA
+python main.py --SEA_folder_directory {Dataset Directory} --experiment_description Test_SEA --batch_size 1 --classifier_type SEA_DIA --test_only --weight_load_pth ./weight_file/[AAAI2022-DevianceNet]SEA.pth --test_metric SEA
+# Test DIA
+python main.py --DIA_folder_directory {Dataset Directory} --experiment_description Test_DIA --batch_size 1 --classifier_type SEA_DIA --test_only --weight_load_pth ./weight_file/[AAAI2022-DevianceNet]DIA.pth --test_metric DIA
+# Application
+python main.py --DIA_folder_directory ./application --experiment_description Test_DIA --batch_size 1 --classifier_type SEA_DIA --test_only --weight_load_pth ./weight_file/[AAAI2022-DevianceNet]SEA.pth --test_metric SEA
+```
+
+
+### Acknowledgement	
+This code is based on the original implementations: 
+- DELTAS: Depth Estimation by Learning Triangulation And densification of Sparse points [Code](https://github.com/magicleap/DELTAS) [paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660103.pdf)
+- A Closer Look at Spatiotemporal Convolutions for Action Recognition
+[Code](https://github.com/irhum/R2Plus1D-PyTorch) [paper](https://openaccess.thecvf.com/content_cvpr_2018/papers/Tran_A_Closer_Look_CVPR_2018_paper.pdf)
 
