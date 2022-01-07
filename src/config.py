@@ -20,12 +20,10 @@ parser.add_argument('--DIA_folder_directory',
 parser.add_argument('--img_y',
                     type=int,
                     default=224,
-                    # default=240,
                     help='height')
 parser.add_argument('--img_x',
                     type=int,
                     default=224,
-                    # default=1216,
                     help='width')
 
 # Environment
