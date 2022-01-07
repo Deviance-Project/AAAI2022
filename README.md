@@ -53,8 +53,8 @@ Note that '+'(ex. v_class2_g35.0911,129.0394_c1+) indicates the additional sets 
 
 # Code
 ## The source code contains
- - Our implementation of DevianeNet (./src/models/devianceNet.py)
- - Official implementation of DevianceNet (./src/main.py)
+ - Our implementation of DevianeNet (./models/devianceNet.py)
+ - Official implementation of DevianceNet (./main.py)
  - Train & evaluation code for Deviance Dataset
  - Code description
 
@@ -76,8 +76,8 @@ Note that '+'(ex. v_class2_g35.0911,129.0394_c1+) indicates the additional sets 
 
 ### Preparation
 1. download the dataset and pretrained weights at (https://drive.google.com/drive/folders/1ERFaC_6IseQgXDvs5_ep5at56b-b7Vmg?usp=sharing).
-2. Put the dataset into **./src/data/** folder
-3. [For Application & Evaluation] Put the pretrained weights into **./src/weight_file/** folder.
+2. Put the dataset into **./data/** folder
+3. [For Application & Evaluation] Put the pretrained weights into **./weight_file/** folder.
 
 ### Training & Testing
 Use the **'main.py'** to train/test our model.
