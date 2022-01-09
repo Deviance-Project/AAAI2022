@@ -95,7 +95,7 @@ python main.py --SEA_folder_directory ./application --experiment_description Tes
 
 ### Acknowledgement	
 This code is based on the original implementations: 
-- DELTAS: Depth Estimation by Learning Triangulation And densification of Sparse points [Code](https://github.com/magicleap/DELTAS) [paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660103.pdf)
-- A Closer Look at Spatiotemporal Convolutions for Action Recognition
+- DELTAS: Depth Estimation by Learning Triangulation And densification of Sparse points (ECCV 2020) [Code](https://github.com/magicleap/DELTAS) [paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660103.pdf)
+- A Closer Look at Spatiotemporal Convolutions for Action Recognition (CVPR 2018)
 [Code](https://github.com/irhum/R2Plus1D-PyTorch) [paper](https://openaccess.thecvf.com/content_cvpr_2018/papers/Tran_A_Closer_Look_CVPR_2018_paper.pdf)
 
