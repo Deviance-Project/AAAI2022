@@ -89,7 +89,7 @@ python main.py --SEA_folder_directory {Dataset Directory} --experiment_descripti
 # Test DIA
 python main.py --DIA_folder_directory {Dataset Directory} --experiment_description Test_DIA --batch_size 1 --classifier_type SEA_DIA --test_only --weight_load_pth ./weight_file/[AAAI2022-DevianceNet]DIA.pth --test_metric DIA
 # Application
-python main.py --DIA_folder_directory ./application --experiment_description Test_DIA --batch_size 1 --classifier_type SEA_DIA --test_only --weight_load_pth ./weight_file/[AAAI2022-DevianceNet]SEA.pth --test_metric SEA
+python main.py --SEA_folder_directory ./application --experiment_description Test_DIA --batch_size 1 --classifier_type SEA_DIA --test_only --weight_load_pth ./weight_file/[AAAI2022-DevianceNet]SEA.pth --test_metric SEA
 ```
 
 
